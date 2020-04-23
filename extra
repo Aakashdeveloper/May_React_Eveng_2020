@@ -1,0 +1,112 @@
+Basic JavaScript
+Npm
+
+React = 3
+React_hooks -1
+React-Redux =2
+React-Saga -1
+React-GarphQL 1
+React-JWT(Login Logut)-1
+Basic React Native=1
+----------------------
+Testing
+
+Depolyment
+-> MERN
+-> Docker
+-> Nginx
+
+Mock API
+json-server
+
+Github
+
+--------NOT--------------
+API
+GarphQL
+Login/Logout
+
+///Next Topic///
+> Walk Through 
+> Basic JavaScript
+
+
+
+///////////////
+    React
+//////////////
+Single Page Application
+Virtual DOM 
+ 
+Node-Server
+
+NPM(Node Package Manager)
+Open Source Scripting 
+
+Package.json> Meta data
+
+JavaScript Object Notation
+[
+    {
+        name:"John",
+        class:"UI"
+    },
+    {
+        name:"Ammy",
+        class:"React"
+    }
+]
+
+
+////////////////
+Step to create package.json
+////////////////
+
+**Node.Js must be install in system
+> Navigate to folder where you create Package.json using cmd/terminal
+> npm init
+> Answer all Question
+> type "yes"
+
+//////////
+Local > Local to folder
+> Navigate to folder  using cmd/terminal
+> npm i packagename
+
+////////////
+Global (package to setup Application)
+
+#window
+> Run cmd as admin
+> npm i -g packagename
+
+#Mac/linux
+> Open terminal
+> sudo npm i -g packagename
+
+
+///////////////////////////
+Setup React App
+///////////////////
+#window
+------OneTime-----
+> Run cmd as admin
+> npm i -g create-react-app
+
+> Navigate to folder where you create APP using cmd/terminal
+> create-react-app appname
+> cd appname
+> npm start
+> localhost:3000
+
+
+------OneTime-----
+#Mac/linux
+> Open terminal
+> sudo npm i -g create-react-app
+
+> Navigate to folder where you create APP using cmd/terminal
+> create-react-app appname
+> cd appname
+> npm start
+> localhost:3000
