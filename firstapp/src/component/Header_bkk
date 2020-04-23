@@ -1,0 +1,59 @@
+import React,{Component,Fragment} from 'react';
+
+class Header extends Component{
+    constructor(){
+        super()
+
+        this.state={
+            title:'React App',
+            keyword:'User Text'
+        }
+        
+    }
+
+    inputChanges = (event) => {
+        console.log(event.target.value)
+        this.setState({keyword:event.target.value?event.target.value:'User Text'})                                                                                     
+    }
+
+    render(){
+        const mystyles = {
+            header:{
+                backgroundColor:'teal'
+            },
+            logo:{
+                fontSize:'30px',
+                color:'#fff',
+                textAlign:'center'
+            }
+        }
+
+        return(
+            <header style={mystyles.header}>
+                <p style={mystyles.logo}>{this.state.title}</p>
+                <center>
+                    <input onChange={this.inputChanges}/>
+                    <p>{this.state.keyword}</p>
+                </center>
+                <hr/>
+            </header>
+        )
+    }
+}
+
+
+/*
+const Header = () => {
+    return(
+        <Fragment>
+            <center>
+                <h1>React App</h1>
+            </center>
+            <hr/>
+        </Fragment>
+    )
+}
+*/
+
+
+export default Header;
