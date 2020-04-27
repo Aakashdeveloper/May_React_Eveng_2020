@@ -133,8 +133,17 @@ function language(name,country){
 var hindi = new language('Hindi','India')
 
 /////es6///
-class language{
-    constructor(name,country){
+class geo{
+    constructor(lat,long){
+        this.lat = lat;
+        this.long=long;
+    }
+}
+
+
+class language extends geo{
+    constructor(name,country,lat,long){
+        super(lat,long)
         this.name = name;
         this.country=country;
     }
@@ -145,4 +154,11 @@ var English = new language('English','UK')
 
 ///
 Map & Filter
-Index Of
+IndexOf
+
+
+function add(a,b){
+    return a+b
+}
+
+const add = (a,b) => { return a+b} 

@@ -109,3 +109,14 @@ Setup React App
 > cd appname
 > npm start
 > localhost:3000
+
+
+
+ClassBase Functional Hooks
+State & Props
+
+ClassBase               Functional
+Logical                 Dumb Component
+Heavy                   Ligth In weight
+Statefull               Stateless Component
+Can Handle State        Cannot Handle State
