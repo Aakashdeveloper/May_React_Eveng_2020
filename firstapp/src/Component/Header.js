@@ -1,52 +1,29 @@
 import React, {Component} from 'react';
+import './Header.css';
+
 
 class Header extends Component{
-    constructor(){
-       super() 
+    constructor(props){
+       super(props) 
+
+       this.state={
+           title:'React State App',
+           year: this.props.year
+       }  
     }
+
+
     render(){
         return (
-            <React.Fragment>
+            <header>
+                <div className="logo">{this.state.title}</div>
                 <center>
-                    <h2>React App</h2>
+                    <input/>
                 </center>
-                <div>
-    
-                </div>
                 <hr/>
-            </React.Fragment>
+            </header>
+          
         )
     }
 }
 export default Header;
-
-
-/*const Header = ( ) => {
-    return (
-        <React.Fragment>
-            <center>
-                <h2>React App</h2>
-            </center>
-            <div>
-                
-            </div>
-            <hr/>
-        </React.Fragment>
-    )
-}
-
-*var React = require('react');
-
-function Header(){
-    return (
-        <div>
-            <center>
-                <h2>React App</h2>
-            </center>
-            <hr/>
-        </div>
-    )
-}
-
-module.exports = Header
-*/

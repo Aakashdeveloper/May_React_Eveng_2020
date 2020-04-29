@@ -27,8 +27,8 @@ GarphQL
 Login/Logout
 
 ///Next Topic///
-> First Component
-
+> Display data
+> Search Bar
 
 
 ///////////////
@@ -120,3 +120,21 @@ Logical                 Dumb Component
 Heavy                   Ligth In weight
 Statefull               Stateless Component
 Can Handle State        Cannot Handle State
+
+
+State & Props
+
+State act like a local variable
+Props is a wayy to transfer the data
+
+CompA     ===>        CompB
+State=5   props       State
+
+id
+class
+tagname
+
+
+Map
+Filter
+indexof

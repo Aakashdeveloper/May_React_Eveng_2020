@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 
-const Footer = ( ) => {
+const Footer = (props) => {
+    console.log("footer>>>",props)
     return (
         <Fragment>
             <hr/>
             <center>
-                <p>&copy; NareshIT</p>
+                <p>&copy;{props.title} {props.year}</p>
             </center>
         </Fragment>
     )
