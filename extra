@@ -27,8 +27,7 @@ GarphQL
 Login/Logout
 
 ///Next Topic///
-> Display data
-> Search Bar
+> Routing
 
 
 ///////////////
@@ -134,7 +133,33 @@ id
 class
 tagname
 
-
+In JavaScript
 Map
 Filter
 indexof
+
+var a = [0,1,2,3]
+a.map((data) => { return data*2})
+a.filter((data) => { return data*2})
+
+var a = [0,1,2,3]
+a.map((data) => { return data*2})
+(4) [0, 2, 4, 6]
+a.filter((data) => { return data*2})
+(3) [1, 2, 3]
+
+var age = [34,23,56,12,33]
+age.filter((data) =>{ return data>25})
+[34,56,33]
+
+
+parent=>child(props)
+child=>parent(propswithcallback)
+
+
+function add(a){
+    return a+a
+}
+
+
+add(1)

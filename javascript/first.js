@@ -162,3 +162,7 @@ function add(a,b){
 }
 
 const add = (a,b) => { return a+b} 
+
+
+var a = 20
+a>20?"hii":"bie"

@@ -1,10 +1,19 @@
 import React from 'react';
 
 const NewsDisplay = (props) => {
-    console.log(props)
+
+    const renderList = props.datalist.map((item,index) => {
+        return(
+            <div key={index}>
+                <p>{index}</p>
+                <h3>{item.title}</h3>
+                <div>{item.feed}</div>
+            </div>
+        )
+    })
     return(
         <div>
-            <h1>News Display</h1>
+           {renderList}
         </div>
     )
 }
