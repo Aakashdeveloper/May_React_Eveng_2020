@@ -5,6 +5,7 @@ import Home from './Home';
 import Profile from './Profile';
 import Post from './Post';
 import PostDetails from './PostDetail';
+import LifeCycle from './Lifecycle';
 
 const Routing = () => {
     return(
@@ -27,6 +28,7 @@ const Routing = () => {
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="/post">Post</Link></li>
                                     <li><Link to="/profile">Profile</Link></li>
+                                    <li><Link to="/lifecycle">Lifecycle</Link></li>
                     
                                 </ul>
                                 </div>
@@ -36,6 +38,7 @@ const Routing = () => {
                         </header>
                         <Route exact path="/" component={Home}></Route>
                         <Route exact path="/profile" component={Profile}></Route>
+                        <Route exact path="/lifecycle" component={LifeCycle}></Route>
                         <Route exact path="/post" component={Post}></Route>
                         <Route exact path="/post/:topic" component={PostDetails}></Route>
                     </div>
