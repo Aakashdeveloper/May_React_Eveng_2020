@@ -2,8 +2,8 @@ Basic JavaScript
 Npm
 
 React = 3
+-----------------------
 React_hooks -1
-
 React-Redux =2
 React-Saga -1
 React-GarphQL 1
@@ -28,7 +28,7 @@ GarphQL
 Login/Logout
 
 ///Next Topic///
-> mock Api
+> React Hooks
 
 
 ///////////////
@@ -168,3 +168,4 @@ add(1)
 
 npm i -g json-server
 json-server --watch db.json --port 8900
+https://developerfunnel.herokuapp.com/restaurants

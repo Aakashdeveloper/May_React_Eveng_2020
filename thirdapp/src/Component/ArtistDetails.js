@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import Header from './Header';
+import axios from 'axios';
+import Albums from './Albums';
 
 const url = "http://localhost:8900/artists";
 class ArtistDetails extends Component {
@@ -26,10 +28,27 @@ class ArtistDetails extends Component {
                         </div>
                     </div>
                 </div>
+                <Albums albumsdata={data.albums}/>
             </React.Fragment>
         )
     }
 
+    async componentDidMount(){
+        const response = await axios.get(`${url}/${this.props.match.params.id}`)
+        this.setState({details:response.data})
+    }
+
+}
+
+
+export default ArtistDetails
+/*componentDidMount(){
+        axios.get(`${url}/${this.props.match.params.id}`)
+        .then((response) => {
+           this.setState({details:response.data})
+        })
+    }*/
+/*
     componentDidMount(){
         fetch(`${url}/${this.props.match.params.id}`,{method:'GET'})
         .then((res) => res.json())
@@ -37,7 +56,4 @@ class ArtistDetails extends Component {
            this.setState({details:data})
         })
     }
-}
-
-
-export default ArtistDetails
+*/
