@@ -169,3 +169,11 @@ add(1)
 npm i -g json-server
 json-server --watch db.json --port 8900
 https://developerfunnel.herokuapp.com/restaurants
+
+npm i redux react-redux
+
+//That will recive state from store
+mapStateToProps()
+
+//This will help to dispatch action
+mapDispatchToProps

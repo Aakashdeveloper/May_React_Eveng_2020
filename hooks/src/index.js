@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hooks from './Component/Hooks';
+import ContextComponent from './Component/contextComponent';
 
-ReactDOM.render(<Hooks/>,document.getElementById('root'));
+ReactDOM.render(<ContextComponent/>,document.getElementById('root'));
 
 
 
