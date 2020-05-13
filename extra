@@ -177,3 +177,6 @@ mapStateToProps()
 
 //This will help to dispatch action
 mapDispatchToProps
+
+
+npm i redux react-redux redux-promise react-slick redux-logger 
