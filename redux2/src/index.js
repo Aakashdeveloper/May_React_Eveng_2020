@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './Component/Home';
+import Routing from './component/Routing';
+import { Provider} from 'react-redux';
 
-ReactDOM.render(<Home/>,document.getElementById('root'));
+import store from './store';
+
+ReactDOM.render(
+    <Provider store={store}>
+        <Routing/>
+    </Provider>
+  ,document.getElementById('root'));
 
 
 

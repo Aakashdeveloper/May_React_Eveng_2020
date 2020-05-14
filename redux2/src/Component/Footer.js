@@ -1,14 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-const Footer = (props) => {
-    console.log("footer>>>",props)
-    return (
-        <Fragment>
-            <hr/>
-            <center>
-                <p>&copy;{props.title} {props.year}</p>
-            </center>
-        </Fragment>
+const Footer= () => {
+    return(
+        <footer>
+            <div>
+                <p>&copy; NareshIT</p>
+            </div>
+        </footer>
     )
 }
 
