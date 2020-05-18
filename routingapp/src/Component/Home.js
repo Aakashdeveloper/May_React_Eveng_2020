@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 
 const Home = () => {
@@ -9,6 +10,9 @@ const Home = () => {
             </div>
             <div className="panel-body">
                 <div className="jumbotron">
+                   <a href="https://github.com/login/oauth/authorize?client_id=2df707f0ee3875437ed2">
+                        Login With GitHub
+                    </a>
                     <h3>Home</h3>
                     <p>Home is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 </div>

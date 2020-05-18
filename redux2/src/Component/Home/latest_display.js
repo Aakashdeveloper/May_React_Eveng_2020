@@ -7,7 +7,7 @@ const LatestDisplay = (props) => {
         if(ldata){
             return ldata.map((data) => {
                 return(
-                    <Link to="/"  className="item"  key={data.id}>
+                    <Link to={`/details/${data.id}`}  className="item"  key={data.id}>
                         <div className="image_cover"
                         style={{background:`url('/images/articles/${data.img}')`}}>
                             <div className="description">
