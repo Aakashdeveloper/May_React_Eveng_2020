@@ -1,0 +1,1 @@
+{"version":3,"sources":["Header.css"],"names":[],"mappings":"AAAA,OACI,uBACJ,CAEA,MACI,cAAc,CACd,UAAU,CACV,iBACJ","file":"main.06d94d72.chunk.css","sourcesContent":["header{\n    background-color:tomato\n}\n\n.logo{\n    font-size:30px;\n    color:#fff;\n    text-align:center\n}"]}

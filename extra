@@ -5,15 +5,15 @@ React = 3
 React_hooks -1
 React-Redux =2
 React-GarphQL 1
+React-JWT(Login Logut)-1
+-> MERN
 ---------------------
 React-Saga -1
-React-JWT(Login Logut)-1
 Basic React Native=1
 ----------------------
 Testing
 
 Depolyment
--> MERN
 -> Docker
 -> Nginx
 
@@ -21,6 +21,7 @@ Mock API
 json-server
 
 Github
+Generator Function
 
 --------NOT--------------
 API

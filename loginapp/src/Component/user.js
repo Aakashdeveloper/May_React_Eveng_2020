@@ -13,6 +13,12 @@ class User extends Component {
     }
 
     render(){
+        if(sessionStorage.getItem('_Utt') == null){
+            this.props.history.push('/login')
+        }
+        if(sessionStorage.getItem('_Utt') !== null && sessionStorage.getItem('0_R') !== 'admin'){
+            this.props.history.push('/profile')
+        }
         return(
             <div>
                 <UserDisplay userData={this.state.users}/>

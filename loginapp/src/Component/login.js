@@ -1,5 +1,6 @@
 import React, {Component } from 'react';
 
+const url = "http://localhost:5000/api/auth/login";
 
 class Login extends Component {
 
@@ -23,6 +24,20 @@ class Login extends Component {
             "email":this.state.email,
             "password":this.state.password
         }
+
+        fetch(url, {
+            method: 'POST',
+            headers:{
+                'Accept':'application/json',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then((res) => res.json())
+        .then((data) => {
+            sessionStorage.setItem('_Utt',data.token)
+            this.props.history.push('/profile')
+        })
     }
 
     render(){
