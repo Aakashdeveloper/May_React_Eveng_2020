@@ -6,22 +6,19 @@ React_hooks -1
 React-Redux =2
 React-GarphQL 1
 React-JWT(Login Logut)-1
--> MERN
----------------------
-React-Saga -1
-Basic React Native=1
-----------------------
-Testing
-
 Depolyment
 -> Docker
 -> Nginx
-
+-> MERN
+React-Saga -1
+Generator Function
 Mock API
 json-server
-
 Github
-Generator Function
+----------------------
+Testing
+Basic React Native=1
+
 
 --------NOT--------------
 API
@@ -201,3 +198,53 @@ npm i redux react-redux redux-promise react-slick redux-logger
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
 (response) => {userinfo}
+
+
+
+> docker build . -t myreactapp
+> docker image ls
+
+server {
+        listen       8081;
+        server_name  localhost;
+
+        location / {
+	    root   /var/www/react-app;
+            index  index.html index.htm;
+        }
+    }
+
+ #server {
+    #    listen       443 ssl;
+    #    server_name  localhost;
+
+    #    ssl_certificate      cert.pem;
+    #    ssl_certificate_key  cert.key;
+
+    #    ssl_session_cache    shared:SSL:1m;
+    #    ssl_session_timeout  5m;
+
+    #    ssl_ciphers  HIGH:!aNULL:!MD5;
+    #    ssl_prefer_server_ciphers  on;
+
+    #    location / {
+    #        root   html;
+    #        index  index.html index.htm;
+    #    }
+    #}
+
+
+/////First Time////
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testrepo.git
+git push -u origin master
+
+git add .
+git commit -m "first commit"
+git push
+
+git pull
+
+git clone https://github.com/Aakashdeveloper/testrepo.git

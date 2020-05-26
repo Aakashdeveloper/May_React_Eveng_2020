@@ -166,3 +166,42 @@ const add = (a,b) => { return a+b}
 
 var a = 20
 a>20?"hii":"bie"
+
+
+function loopme(){
+    for(i=0;i<5;i++){
+        console.log(i)
+    }
+}
+undefined
+loopme()
+VM127:3 0
+VM127:3 1
+VM127:3 2
+VM127:3 3
+VM127:3 4
+
+
+
+function * loopme(){
+    for(i=0;i<5;i++){
+      yield i
+    }
+}
+undefined
+loopme()
+loopme {<suspended>}
+var mydata = loopme()
+undefined
+mydata.next()
+{value: 0, done: false}
+mydata.next()
+{value: 1, done: false}
+mydata.next()
+{value: 2, done: false}
+mydata.next()
+{value: 3, done: false}
+mydata.next()
+{value: 4, done: false}
+mydata.next()
+{value: undefined, done: true}
