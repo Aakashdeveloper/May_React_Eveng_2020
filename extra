@@ -15,7 +15,6 @@ Generator Function
 Mock API
 json-server
 Github
-----------------------
 Testing
 Basic React Native=1
 
@@ -248,3 +247,7 @@ git push
 git pull
 
 git clone https://github.com/Aakashdeveloper/testrepo.git
+
+
+npm i -g create-react-native-app
+create-react-native-app mymobi
